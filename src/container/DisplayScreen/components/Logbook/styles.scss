@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    .workforce-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.workforce-detail{
+    display: flex;
+    flex-direction: column;
+    background-color: #FAF9F9;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 240px;
+    height: 320px;
+    .delBtn{
+        border-radius: 50%;
+        width: 30px;
+        height: auto;
+        background-color: #003466;
+        color: white;
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .num{
+        font-size: 18pt;
+        padding-bottom: 10px;
+    }
+    .name{
+        font-size: 20pt;
+        color: #003466;
+    }
+    .location{
+        font-size: 18pt;
+        display: flex;
+        flex-grow: 1;
+        align-items: flex-end;
+        padding: 5px;
+    }
+}

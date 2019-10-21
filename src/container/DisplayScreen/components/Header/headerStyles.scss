@@ -1,0 +1,15 @@
+.header{
+    
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    padding: 20px 45px; 
+    .logo{
+        height: 55px;
+        margin-right: 10px;
+    }
+    .name{
+        height: 40px;
+    }
+}
