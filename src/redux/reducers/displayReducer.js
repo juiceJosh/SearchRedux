@@ -24,11 +24,11 @@ const initialState = {
 export default (state=initialState, action) => {
     switch(action.type){
         case SEARCH_INPUT:
-            const search = state.credentials
             const {searchField} = action.payload;
             return {
                 ...state, 
-                searchField, filteredUser: search.filter( info => 
+                searchField, 
+                filteredUser: state.credentials.filter( info => 
                     info.user.toLowerCase().includes(searchField.toLowerCase()
                 ))
             }
