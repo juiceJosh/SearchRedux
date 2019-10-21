@@ -12,10 +12,10 @@ export class index extends Component {
         console.log(infoId)
     }
     render() {
-        const data = this.props.filteredUser
+        const filteredUser = this.props
 
-        const logList = data.length ? (
-            data.map(info => {
+        const logList = filteredUser.length ? (
+            filteredUser.map(info => {
                     return(
                         <div key={info.id} className="workforce-detail">
                             <button className="delBtn" onClick={this.handleDelete.bind(this, info.id)}>x</button>

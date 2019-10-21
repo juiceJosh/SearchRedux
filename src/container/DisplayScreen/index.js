@@ -18,7 +18,7 @@ export class index extends Component {
                 <Header className="mb-4"/>
                 <div className="title">Anteriore Log Book</div>
                 <input 
-                    type="text" 
+                    type="search" 
                     placeholder="Search Here"
                     className=" mb-2 input" 
                     name="user"
@@ -33,7 +33,6 @@ export class index extends Component {
 }
 
 const mapStateToProps = state =>({  
-    credentials: state.display.credentials,
     value: state.display.searchField
 })
 
